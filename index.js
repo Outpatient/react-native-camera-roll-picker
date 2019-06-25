@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import {
-  CameraRoll,
   Platform,
   StyleSheet,
   View,
@@ -9,6 +8,8 @@ import {
   ActivityIndicator,
 } from 'react-native';
 import PropTypes from 'prop-types';
+import CameraRoll from "@react-native-community/cameraroll";
+
 import Row from './Row';
 
 import ImageItem from './ImageItem';
