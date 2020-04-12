@@ -188,6 +188,7 @@ class CameraRollPicker extends Component {
   }
 
   renderRow(item) { // item is an array of objects
+
     const isSelected = item.map((imageItem) => {
       if (!imageItem) return false;
       const { uri } = imageItem.node.image;
@@ -201,6 +202,7 @@ class CameraRollPicker extends Component {
       containerWidth={this.props.containerWidth}
       imageMargin={this.props.imageMargin}
       selectedMarker={this.props.selectedMarker}
+      itemDecoration={this.props.itemDecoration}
     />);
   }
 

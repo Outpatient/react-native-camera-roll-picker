@@ -35,7 +35,7 @@ class ImageItem extends Component {
 
   render() {
     const {
-      item, selected, selectedMarker, imageMargin,
+      item, selected, selectedMarker, imageMargin, itemDecoration
     } = this.props;
 
     const marker = selectedMarker || (<Image
@@ -55,6 +55,7 @@ class ImageItem extends Component {
           style={{ height: this.imageSize, width: this.imageSize }}
         />
         {(selected) ? marker : null}
+        {!!itemDecoration && itemDecoration(item)}
       </TouchableOpacity>
     );
   }
